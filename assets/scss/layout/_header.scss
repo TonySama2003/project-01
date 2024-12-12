@@ -1,0 +1,130 @@
+// Định nghĩa các biến tái sử dụng
+$text-color: #141313;
+$bg-transparent: transparent;
+$border-color: #141313;
+$header-padding: 21px 0px 21px 50px;
+$cart-size: 60px;
+
+// Mixin cho link styles
+@mixin link-style($color) {
+  color: $color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+header {
+  top: 14px;
+  left: 30px;
+  right: 30px;
+  max-width: 100%;
+  min-width: 480px;
+  z-index: 100;
+  position: fixed;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  padding: $header-padding;
+  border: 1px solid $border-color;
+
+  ul {
+    display: flex;
+    margin-right: 30px;
+    gap: 30px; // Khoảng cách giữa các item
+  }
+
+  a {
+    @include link-style($text-color);
+  }
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  .search {
+    width: 238px;
+    height: 38px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    &:hover {
+      border-bottom: 1px solid $border-color;
+    }
+
+    input {
+      border: none;
+      outline: none;
+    }
+
+    div {
+      display: inline-block;
+    }
+  }
+
+  .cart {
+    width: $cart-size;
+    height: $cart-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid $border-color;
+  }
+}
+
+/* Mặc định, hiển thị menu bình thường */
+.navbar {
+  display: block;
+}
+
+.hamburger {
+  background-color: $bg-transparent;
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+#toggle-navbar{
+  background-color: $bg-transparent;
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+/* Khi màn hình nhỏ hơn 852px */
+@media (max-width: 1040px) {
+  .navbar {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  
+  .toggle-navbar {
+    display: none;
+  }
+
+  .toggle-navbar:checked + .hamburger + .navbar {
+    display: block;
+    width: 65%;
+    margin-left: 80px;
+    background-color: #fff;
+    padding: 20px 20px;
+  }
+
+}
