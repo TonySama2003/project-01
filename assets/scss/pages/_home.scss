@@ -2,10 +2,10 @@
     box-sizing: border-box;
 }
 
+$banner-color:#B4E2F9;
 $hover-color: #ffe484;
 $hover-color-text: #141313;
 $bg-body-color: #fefaf0;
-//#fefaf0
 $text-color-01: #141313;
 $text-color-02: #fff;
 $font-weight-400: 400;
@@ -20,19 +20,28 @@ $h2-font-size: 2.5rem;
     justify-content: end;
 }
 
-.justify-content-start{
-    display: flex;
-    justify-content: start;
-}
-
 .align-items{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.justify-content-start{
+    display: flex;
+    justify-content: start;
+    gap: 39px;
+}
 
 .padding-0{
     padding: 6rem 6rem ;
+}
+.padding-left-right{
+    padding: 0 6rem ;
+}
+.padding-top{
+    padding-top: 6rem ;
+}
+.padding-bottom{
+    padding-bottom: 6rem ;
 }
 .padding-banner{
     padding: 14rem 6rem 12rem 6rem;
@@ -51,6 +60,20 @@ $h2-font-size: 2.5rem;
 .width{
     width: 100%;
 }
+
+// Link styling
+@mixin link-style($color) {
+    color: $color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+.underline{
+    @include link-style($text-color);
+    cursor: pointer;
+}
+
 // Body styling
 body {
     background-color: $bg-body-color;
@@ -162,7 +185,6 @@ h5 {
 
 // New Product Section
 .new-product {
-    padding:  6rem 6rem;
     .title {
         p {
             font-size: $text-size;
@@ -231,7 +253,7 @@ h5 {
         font-size: 14px;
         font-weight: $font-weight-400;
         color: $text-color-01;
-        line-height: 14px;
+        line-height: 30px;
         margin-bottom: 0.5rem;
     }
 
@@ -299,7 +321,7 @@ h5 {
     background-color: #f1ebe4;
 }
 .color-banner-3{
-    background-color: #B4E2F9;
+    background-color: $banner-color;
 }
 #title-banner {
     text-align: start;
@@ -410,4 +432,33 @@ h5 {
 .view a{
     
     @include link-style($text-color);
+}
+#review-content{
+    text-align: center;
+
+}
+.row-reverse { 
+    flex-direction: row-reverse;
+}
+
+// Blog
+
+.status{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.feeling{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    a{
+        display: flex;
+        align-items: center;
+        gap:5px;
+    }
+}
+.share a{
+    display: flex;
+    align-items: center;
 }

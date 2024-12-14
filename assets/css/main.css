@@ -171,9 +171,8 @@ header a:hover {
   gap: 22px;
 }
 .header-right .search {
-  width: 238px;
+  width: 345px;
   height: 38px;
-  margin-left: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -185,6 +184,7 @@ header a:hover {
 .header-right .search input {
   border: none;
   outline: none;
+  background-color: transparent;
 }
 .header-right .search div {
   display: inline-block;
@@ -346,19 +346,32 @@ a {
   justify-content: end;
 }
 
-.justify-content-start {
-  display: flex;
-  justify-content: start;
-}
-
 .align-items {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.justify-content-start {
+  display: flex;
+  justify-content: start;
+  gap: 39px;
+}
+
 .padding-0 {
   padding: 6rem 6rem;
+}
+
+.padding-left-right {
+  padding: 0 6rem;
+}
+
+.padding-top {
+  padding-top: 6rem;
+}
+
+.padding-bottom {
+  padding-bottom: 6rem;
 }
 
 .padding-banner {
@@ -380,6 +393,15 @@ a {
 
 .width {
   width: 100%;
+}
+
+.underline {
+  color: #141313;
+  text-decoration: none;
+  cursor: pointer;
+}
+.underline:hover {
+  text-decoration: underline;
 }
 
 body {
@@ -476,9 +498,6 @@ h5 {
   width: 100%;
 }
 
-.new-product {
-  padding: 6rem 6rem;
-}
 .new-product .title p {
   font-size: 20px;
   font-weight: 400;
@@ -537,7 +556,7 @@ h5 {
   font-size: 14px;
   font-weight: 400;
   color: #141313;
-  line-height: 14px;
+  line-height: 30px;
   margin-bottom: 0.5rem;
 }
 .product-content #evaluate {
@@ -708,6 +727,36 @@ h5 {
 }
 .view a:hover {
   text-decoration: underline;
+}
+
+#review-content {
+  text-align: center;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.status {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.feeling {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.feeling a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.share a {
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */

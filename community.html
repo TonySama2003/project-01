@@ -1,45 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
-	<link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
 </head>
+
 <body>
     <header>
-		<input type="checkbox" id="toggle-navbar" class="toggle-navbar">
-		<label for="toggle-navbar" class="hamburger">☰
-		</label>
-		<nav class="navbar">
-			<ul>
-				<li><a href="./index.html">Home</a></li>
-				<li><a href="./brand.html">Brand</a></li>
-				<li><a href="./shops.html">Shop</a></li>
-				<li><a href="./about.html">About</a></li>
-				<li><a href="./community.html">Community</a></li>
-			</ul>
-		</nav>
-		<a href="/index.html">
-			<img src="./assets/img/Logo.png" alt="logo">
-		</a>
-		<div class="header-right">
-			<div class="search">
-				<input type="text" placeholder="Search..." />
-				<div role="button" tabindex="0" aria-label="Search">
-					<img src="./assets/icon/Search Icon.svg" alt="Search Icon" />
+        <input type="checkbox" id="toggle-navbar" class="toggle-navbar">
+        <label for="toggle-navbar" class="hamburger">☰
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./brand.html">Brand</a></li>
+                <li><a href="./shops.html">Shop</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./community.html">Community</a></li>
+            </ul>
+        </nav>
+        <a href="/index.html">
+            <img src="./assets/img/Logo.png" alt="logo">
+        </a>
+        <div class="header-right">
+            <div class="search">
+                <input type="text" placeholder="Search..." />
+                <div role="button" tabindex="0" aria-label="Search">
+                    <img src="./assets/icon/Search Icon.svg" alt="Search Icon" />
+                </div>
+            </div>
+            <a href="#" class="cart">
+                <img src="./assets/icon/cart.svg" alt="shopping cart">
+            </a>
+        </div>
+    </header>
+    <section class="new-product padding-left-right padding-top text-center">
+        <div class="title">
+            <h2>
+                Home
+            </h2>
+            <p>
+                Welcome to the Beauty Spot Community! Check
+                <br>
+                out latest updates and activities here
+            </p>
+        </div>
+        <div class="row gx-3 gy-3 justify-content-between ">
+            <div class="col-3">
+                <select id="cars">
+                    <option value="Price">Price</option>
+                    <option value="Filter by Featured">Filter by Featured</option>
+                    <option value="Brand">Brand</option>
+                    <option value="Offer">Offer</option>
+                    <option value="Discount Level">Discount Level</option>
+                    <option value="Gender">Gender</option>
+                    <option value="Key Ingredients" selected>Key Ingredients</option>
+                </select>
+            </div>
+            <div class="col-3">
+                <div class="header-right ">
+                    <div class="search">
+                        <input type="text" placeholder="Search..." />
+                        <div role="button" tabindex="0" aria-label="Search">
+                            <img src="./assets/icon/Search Icon.svg" alt="Search Icon" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new-product padding-left-right padding-bottom text-center">
+        <div class="title">
+            <h2 class="text-start">
+                What to do
+            </h2>
+        </div>
+        <div class="row gx-4 gy-4">
+            <div class="col-3">
+                <div class="list-product">
+                    <a href="#">
+                        <img id="rectangle" src="./assets/img/icon-1.png"
+                            alt="Soy pH-Balanced Hydrating Face Wash Jumbo">
+                    </a>
+                    <div class="product-content">
+                        <a href="#">
+                            <h3>
+                                Get your post to be fav' by the Feelunique
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="list-product">
+                    <a href="#">
+                        <img id="rectangle" src="./assets/img/icon-2.png"
+                            alt="Soy pH-Balanced Hydrating Face Wash Jumbo">
+                    </a>
+                    <div class="product-content">
+                        <a href="#">
+                            <h3>
+                                Get your post to be fav' by the Feelunique
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="list-product">
+                    <a href="#">
+                        <img id="rectangle" src="./assets/img/icon-3.png"
+                            alt="Soy pH-Balanced Hydrating Face Wash Jumbo">
+                    </a>
+                    <div class="product-content">
+                        <a href="#">
+                            <h3>
+                                Get your post to be fav' by the Feelunique
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="list-product">
+                    <a href="#">
+                        <img id="rectangle" src="./assets/img/icon-4.png"
+                            alt="Soy pH-Balanced Hydrating Face Wash Jumbo">
+                    </a>
+                    <div class="product-content">
+                        <a href="#">
+                            <h3>
+                                Get your post to be fav' by the Feelunique
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="new-product padding-left-right padding-bottom text-center">
+        <div class="title justify-content-start">
+            <h2 class="text-start underline">
+                Feed
+            </h2>
+            <h2 class="text-start underline">
+                Discover
+            </h2>
+        </div>
+        <div class="row gx-4 gy-4">
+            <div class="col-6">
+                <div class="list-product">
+					<a href="#">
+						<img id="rectangle" src="./assets/img/Rectangle-29.png"
+							alt="Soy pH-Balanced Hydrating Face Wash Jumbo">
+					</a>
+					<div class="product-content">
+						<p>
+							2,237 likes | 32 comments |12 shares
+						</p>
+						<a href="#">
+							<h3>
+								Soy pH-Balanced Hydrating Face Wash Jumbo
+							</h3>
+						</a>
+						<p>
+                            Hi everyone!
+                            <br>
+                            We have some 31st State products in our Test & Review this 
+                            month. They are vegan and natural skincare and grooming products 
+                            created specifically for teen guys and young men. If you know anyone
+                             who would be interested in testing these out and leaving an honest 
+                             review, please leave a comment and we will be in contact with you 😊
+                        </p>
+					</div>
+                    <div class="status">
+                        <div class="feeling">
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-1.svg" alt="feeling">
+                                <p>2,237 likes</p>
+                            </a>
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-2.svg" alt="feeling">
+                                <p>32 comments</p>
+                            </a>
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-3.svg" alt="feeling">
+                                <p>12 shares</p>
+                            </a>
+                        </div>
+                        <div class="share">
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-4.svg" alt="feeling">
+                                <p>12 shares</p>
+                            </a>
+                        </div>
+                    </div>
 				</div>
-			</div>
-			<a href="#" class="cart">
-				<img src="./assets/icon/cart.svg" alt="shopping cart">
-			</a>
-		</div>
-	</header>
+            </div>
+            <div class="col-6">
+                <div class="list-product">
+					<a href="#">
+						<img id="rectangle" src="./assets/img/Rectangle-32.png"
+							alt="Soy pH-Balanced Hydrating Face Wash Jumbo">
+					</a>
+					<div class="product-content">
+						<p>
+							2,237 likes | 32 comments |12 shares
+						</p>
+						<a href="#">
+							<h3>
+								Soy pH-Balanced Hydrating Face Wash Jumbo
+							</h3>
+						</a>
+						<p>
+                            Hi everyone!
+                            <br>
+                            We have some 31st State products in our Test & Review this 
+                            month. They are vegan and natural skincare and grooming products 
+                            created specifically for teen guys and young men. If you know anyone
+                             who would be interested in testing these out and leaving an honest 
+                             review, please leave a comment and we will be in contact with you 😊
+                        </p>
+					</div>
+                    <div class="status">
+                        <div class="feeling">
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-1.svg" alt="feeling">
+                                <p>2,237 likes</p>
+                            </a>
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-2.svg" alt="feeling">
+                                <p>32 comments</p>
+                            </a>
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-3.svg" alt="feeling">
+                                <p>12 shares</p>
+                            </a>
+                        </div>
+                        <div class="share">
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-4.svg" alt="feeling">
+                                <p>12 shares</p>
+                            </a>
+                        </div>
+                    </div>
+				</div>
+            </div>
+            <div class="col-6">
+                <div class="list-product">
+					<a href="#">
+						<img id="rectangle" src="./assets/img/Rectangle-30.png"
+							alt="Soy pH-Balanced Hydrating Face Wash Jumbo">
+					</a>
+					<div class="product-content">
+						<p>
+							2,237 likes | 32 comments |12 shares
+						</p>
+						<a href="#">
+							<h3>
+								Soy pH-Balanced Hydrating Face Wash Jumbo
+							</h3>
+						</a>
+						<p>
+                            Hi everyone!
+                            <br>
+                            We have some 31st State products in our Test & Review this 
+                            month. They are vegan and natural skincare and grooming products 
+                            created specifically for teen guys and young men. If you know anyone
+                             who would be interested in testing these out and leaving an honest 
+                             review, please leave a comment and we will be in contact with you 😊
+                        </p>
+					</div>
+                    <div class="status">
+                        <div class="feeling">
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-1.svg" alt="feeling">
+                                <p>2,237 likes</p>
+                            </a>
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-2.svg" alt="feeling">
+                                <p>32 comments</p>
+                            </a>
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-3.svg" alt="feeling">
+                                <p>12 shares</p>
+                            </a>
+                        </div>
+                        <div class="share">
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-4.svg" alt="feeling">
+                                <p>12 shares</p>
+                            </a>
+                        </div>
+                    </div>
+				</div>
+            </div>
+            <div class="col-6">
+                <div class="list-product">
+					<a href="#">
+						<img id="rectangle" src="./assets/img/Rectangle-31.png"
+							alt="Soy pH-Balanced Hydrating Face Wash Jumbo">
+					</a>
+					<div class="product-content">
+						<p>
+							2,237 likes | 32 comments |12 shares
+						</p>
+						<a href="#">
+							<h3>
+								Soy pH-Balanced Hydrating Face Wash Jumbo
+							</h3>
+						</a>
+						<p>
+                            Hi everyone!
+                            <br>
+                            We have some 31st State products in our Test & Review this 
+                            month. They are vegan and natural skincare and grooming products 
+                            created specifically for teen guys and young men. If you know anyone
+                             who would be interested in testing these out and leaving an honest 
+                             review, please leave a comment and we will be in contact with you 😊
+                        </p>
+					</div>
+                    <div class="status">
+                        <div class="feeling">
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-1.svg" alt="feeling">
+                                <p>2,237 likes</p>
+                            </a>
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-2.svg" alt="feeling">
+                                <p>32 comments</p>
+                            </a>
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-3.svg" alt="feeling">
+                                <p>12 shares</p>
+                            </a>
+                        </div>
+                        <div class="share">
+                            <a class="underline" href="#">
+                                <img src="./assets/icon/status-4.svg" alt="feeling">
+                                <p>12 shares</p>
+                            </a>
+                        </div>
+                    </div>
+				</div>
+            </div>
+        </div>
 
 
+    </section>
 
-<H1> COMMUNITY </H1>
 
 
 
@@ -154,6 +468,7 @@
             </nav>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
