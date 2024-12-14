@@ -352,7 +352,7 @@ a {
   align-items: center;
 }
 
-.justify-content-start {
+.justify-content-start-1 {
   display: flex;
   justify-content: start;
   gap: 39px;
